@@ -1,0 +1,137 @@
+// First attempt with SCSS :)
+
+@import '_globals';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $primary-Red;
+    background-image: url(/images/bg-intro-desktop.png);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    .container {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        > div {
+            flex: 1;
+        }
+        .content {
+            padding: 40px;
+        }
+        .content1 h1 {
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 30px;
+        }
+        .content2 {
+            .box1 {
+                background-color: $accent-Blue;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: $border-radius;
+                box-shadow: $box-shadow;
+            }
+            .box2 {
+                background-color: #fff;
+                padding: 40px;
+                border-radius: $border-radius;
+                box-shadow: $box-shadow;
+                
+                .form-control {
+                    position: relative;
+                    padding-bottom: 20px;
+                }
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 10px 20px;
+                    border: 1px solid $neutral-Grayish-Blue;
+                    border-radius: 5px;
+                    font-family: inherit;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                input:focus {
+                    border: 2px solid $neutral-Grayish-Blue;
+                    outline: none;
+                }
+                small {
+                    color: $primary-Red;
+                    font-style: italic;
+                    font-size: 11px;
+                    font-weight: 500;
+                    position: absolute;
+                    right: 0;
+                    visibility: hidden;
+                }
+                img {
+                    position: absolute;
+                    right: 20px;
+                    top: 10px;
+                    visibility: hidden;
+                }
+                /////////////// error states
+                .error small {
+                    visibility: visible;
+                }
+                .error img {
+                    visibility: visible;
+                }
+                //////////// success state
+                .success small {
+                    visibility: visible;
+                    color: $primary-Green;
+                }
+                .success input {
+                    border: 2px solid $primary-Green;
+                }
+                ///////////
+                button {
+                    font-family: inherit;
+                    font-weight: 500;
+                    color: white;
+                    background-color: $primary-Green;
+                    padding: 10px;
+                    width: 100%;
+                    border-radius: $border-radius;
+                    border: 2px solid hsl(154, 59%, 51%);
+                    border-bottom-color: hsl(154, 60%, 37%);
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: hsl(154, 52%, 63%);
+                }
+                .form > p {
+                    color: $neutral-Grayish-Blue;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .form a {
+                    text-decoration: none;
+                    color: $primary-Red;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+    .content1 {
+        text-align: center;
+    }
+}

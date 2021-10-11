@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ff7a7a;
+  background-image: url(/images/bg-intro-desktop.png);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+body .container > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .container .content {
+  padding: 40px;
+}
+
+body .container .content1 h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+body .container .content2 .box1 {
+  background-color: #6055a5;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+body .container .content2 .box2 {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+body .container .content2 .box2 .form-control {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+body .container .content2 .box2 input {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #b9b6d3;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+body .container .content2 .box2 input:focus {
+  border: 2px solid #b9b6d3;
+  outline: none;
+}
+
+body .container .content2 .box2 small {
+  color: #ff7a7a;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+
+body .container .content2 .box2 img {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  visibility: hidden;
+}
+
+body .container .content2 .box2 .error small {
+  visibility: visible;
+}
+
+body .container .content2 .box2 .error img {
+  visibility: visible;
+}
+
+body .container .content2 .box2 .success small {
+  visibility: visible;
+  color: #38cc8c;
+}
+
+body .container .content2 .box2 .success input {
+  border: 2px solid #38cc8c;
+}
+
+body .container .content2 .box2 button {
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+  background-color: #38cc8c;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #38cc8c;
+  border-bottom-color: #269766;
+  cursor: pointer;
+}
+
+body .container .content2 .box2 button:hover {
+  background-color: #70d2a7;
+}
+
+body .container .content2 .box2 .form > p {
+  color: #b9b6d3;
+  font-size: 12px;
+  text-align: center;
+}
+
+body .container .content2 .box2 .form a {
+  text-decoration: none;
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content1 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
